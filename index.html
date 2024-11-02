@@ -3,14 +3,31 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link id="favicon" rel="icon" type="image/svg+xml" href="/favicon-dark.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + React + TS</title>
+  <title>FireTools</title>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
+  <script>
+    // Function to update favicon based on theme
+    function updateFavicon() {
+      const favicon = document.getElementById("favicon");
+      const isDark = document.documentElement.classList.contains("dark");
+
+      // Set favicon based on theme
+      favicon.href = isDark ? "/favicon-dark.ico" : "/favicon-light.ico";
+    }
+
+    // Listen for changes in theme
+    const observer = new MutationObserver(updateFavicon);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+
+    // Initial favicon setting
+    updateFavicon();
+  </script>
 </body>
 
 </html>

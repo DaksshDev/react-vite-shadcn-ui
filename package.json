@@ -1,5 +1,5 @@
 {
-  "name": "react-vite-ui",
+  "name": "firetools",
   "private": true,
   "version": "0.2.1",
   "type": "module",
@@ -10,12 +10,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-dropdown-menu": "^2.1.2",
+    "@radix-ui/react-progress": "^1.1.0",
+    "@radix-ui/react-select": "^2.1.2",
     "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-switch": "^1.1.1",
+    "@types/react-scrollbar": "^0.5.7",
+    "browser-image-compression": "^2.0.2",
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
+    "convert-image": "^1.1.3",
+    "file-saver": "^2.0.5",
+    "image-conversion": "^2.1.1",
+    "jimp": "^1.6.0",
+    "js-file-download": "^0.4.12",
     "lucide-react": "^0.244.0",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
+    "react-dropzone": "^14.3.1",
+    "react-router-dom": "^6.27.0",
     "tailwindcss-animate": "^1.0.6"
   },
   "devDependencies": {
@@ -32,6 +46,7 @@
     "postcss": "^8.4.24",
     "prettier-plugin-tailwindcss": "0.2.5",
     "tailwind-merge": "^1.12.0",
+    "tailwind-scrollbar": "^3.1.0",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
